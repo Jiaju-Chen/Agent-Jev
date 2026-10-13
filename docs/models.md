@@ -14,6 +14,12 @@ in the full 2B ALFWorld research run. Tiny tests establish computation equivalen
 not task quality or full-size performance. New model families should be checked
 against the full model's last-position logits before claiming compatibility.
 
+The package fixes Transformers at **5.17.0**, the validated version. The initial
+release allowed newer5.x versions; fresh CPU installation selected5.19.0, whose
+accelerator detection raises with the PyTorch2.6 CPU wheel before model imports.
+The CPU workflow now checks a genuinely CPU-only wheel on Python3.10 and3.12;
+masking GPUs in a CUDA-enabled installation is not the same check.
+
 The default renderer is **plain text**, not a model-specific chat template.
 Training and inference use the same renderer. An instruct model can load but may
 need adaptation to this prompt format; pretrained decision quality is not guaranteed.

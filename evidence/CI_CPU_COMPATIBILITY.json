@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-10-13T15:30:48Z",
+  "original_workflow": "https://github.com/Jiaju-Chen/Agent-Jev/actions/runs/38420169428",
+  "failure": {
+    "torch": "2.6.0+cpu",
+    "transformers": "5.19.0",
+    "minimal_repro": "from transformers import GPT2LMHeadModel",
+    "exit_code": 1,
+    "error": "Cannot access accelerator device when none is available"
+  },
+  "cause": "Broad Transformers dependency admitted5.19; its accelerator query fails with the torch2.6 CPU-only build at model import",
+  "fix": "Pin transformers==5.17.0 in package metadata; explicitly test CPU-only wheel and disable matrix fail-fast",
+  "local_green": {
+    "python": "3.10",
+    "torch": "2.6.0+cpu",
+    "transformers": "5.17.0",
+    "cuda_build": null,
+    "model_import": true,
+    "unit_tests": 9,
+    "cpu_smoke": true,
+    "portable_training": true,
+    "resumed_vs_uninterrupted": "bitwise_equal"
+  },
+  "github_fixed_workflow": "pending new push"
+}

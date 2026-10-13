@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Train and use single-forward decision models for agents and simulation"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["torch>=2.6,<3", "transformers>=5.17,<6", "safetensors>=0.4", "huggingface-hub>=0.30"]
+dependencies = ["torch>=2.6,<3", "transformers==5.17.0", "safetensors>=0.4", "huggingface-hub>=0.30"]
 license = {file = "LICENSE"}
 
 [project.urls]

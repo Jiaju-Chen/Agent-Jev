@@ -62,5 +62,6 @@
     "examples/alfworld_choice.py": "19b8b4c93d4632619e3296df761d3412d10b4a8ee569567518e81e30ab02ec47",
     "examples/dev_demo.jsonl": "72fd152f12b1d7e1f7e29dc29db07533bfa20f8b52ab7412a098881e672804d7",
     "examples/train_demo.jsonl": "3b60b98bac14a4ed284d518296aaf0bef2ea2e52e165eafc558fa37e71b5da99"
-  }
+  },
+  "cpu_wheel_regression": "See CI_CPU_COMPATIBILITY.json for reproduced failure and passing true CPU-wheel check"
 }
