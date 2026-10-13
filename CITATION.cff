@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If this toolkit helps your work, cite this repository."
+title: "Agent-Jev: User-data training for single-forward decision models"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Jiaju
+version: 0.1.0
+url: "https://github.com/Jiaju-Chen/Agent-Jev"
+license: Apache-2.0

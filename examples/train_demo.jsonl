@@ -1,0 +1,2 @@
+{"task_id":"toy-train-1","state":{"resident":"A","budget":120,"project":"repair"},"question":"Choose the next decision.","options":{"contribute":"Contribute 40 units.","wait":"Wait for information.","decline":"Decline."},"target":"contribute","label_source":"synthetic documentation example"}
+{"task_id":"toy-train-2","state":{"resident":"B","budget":10,"project":"repair"},"question":"Choose the next decision.","options":{"contribute":"Contribute 40 units.","wait":"Wait for information.","decline":"Decline."},"target":"decline","label_source":"synthetic documentation example"}

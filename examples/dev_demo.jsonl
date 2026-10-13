@@ -1,0 +1,1 @@
+{"task_id":"toy-dev-1","state":{"resident":"C","budget":90,"project":"repair"},"question":"Choose the next decision.","options":{"contribute":"Contribute 40 units.","wait":"Wait for information.","decline":"Decline."},"target":"wait","label_source":"synthetic documentation example"}

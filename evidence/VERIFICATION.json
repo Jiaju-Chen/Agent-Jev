@@ -1,0 +1,66 @@
+{
+  "cpu_portable_sft": "passed",
+  "optimizer_resume": "bitwise_equal_to_uninterrupted",
+  "full_updates": 4,
+  "fp32_master_and_moments": true,
+  "only_model_slots": [
+    "best",
+    "latest"
+  ],
+  "alfworld_encoder_parity": {
+    "status": "exact_token_ids_gold_and_candidate_mapping",
+    "cases": 300
+  },
+  "checked_utc": "2026-10-13T15:12:54Z",
+  "package": "agent-jev",
+  "version": "0.1.0",
+  "core_tests": {
+    "passed": 9,
+    "device": "cpu",
+    "runtime": {
+      "python": "3.10",
+      "torch": "2.6.0",
+      "transformers": "5.17.0"
+    }
+  },
+  "selective_full_logit_equivalence": {
+    "families": [
+      "gpt2",
+      "qwen2",
+      "llama",
+      "gemma2"
+    ],
+    "sizes": "tiny real HF configurations",
+    "gemma2_final_softcap": true
+  },
+  "package_install": "wheel built and installed into isolated target using existing dependency runtime",
+  "cpu_smoke": "passed from installed package, no model download",
+  "cli_entrypoint": "agent-jev-train --help passed",
+  "weights_bundled": false,
+  "limitations": [
+    "No accuracy benchmark for pretrained models in this release",
+    "No full-size GPU benchmark of this release package",
+    "No validated human-behavior distribution",
+    "Full-size Qwen3.5 exporter not rerun; derived from research exporter",
+    "GitHub Actions fresh dependency installation not yet observed"
+  ],
+  "source_sha256": {
+    "src/decoder_decision/controls.py": "d0a6f6ab90a4dc53895920b448eb4c34f25e07b5ebe1d66a4a770c77ee1cdbc2",
+    "src/decoder_decision/__init__.py": "1db24c5f63d3f08162fb0ae4bef46625c338f7ec32a7171e8f4c2ccb8997eeee",
+    "src/decoder_decision/prompts.py": "494e501c24c9aec142729e2ae982e0b37e9d4d877c792dd58514d62083496bf7",
+    "src/decoder_decision/engine.py": "0e45cdac95b55edf61caca93f95f17c0d3d832616a8d42f5e9a197ba4564fc8b",
+    "src/decoder_decision/sampling.py": "f23131d705ae305765027ae27590a16f5ba5fe32fa0c3c9adcd455abb53a7418",
+    "src/decoder_decision/train.py": "571ed6d60108e9f2dc86e212f6b147c9ba191c16e673b6425ed8a457fe1c2fc9",
+    "tests/test_model_families.py": "b6e2a9b7071d3869529251d3a529d276b8def6ebc0b886d1323292fc8b4b89f1",
+    "tests/test_core.py": "2b0affe00df60d3cf8f0a629c27d2a49ffafd5f017931ebbda7d6995c6c47984",
+    "tests/test_dataset.py": "6b4b81060b7cc466d3b9d8d7d0e5b99d7e2fd6bc2cdd327e4ffb8df4c44c0633",
+    "tools/verify_release.py": "93a7a2b73a1554b6c5ba620ba7f17f1a6ab5c5c620fe47f0af225c42676a73a8",
+    "tools/prepare_dataset.py": "6c3415b8a0bcd2839233aec63b09b34f3a266d53ed5eeb9f66e13c9ed99a4088",
+    "tools/export_qwen_text.py": "7dada537e888e515150651e2d10fab658c81f1cc942d6d611db9aefa9fa25c5a",
+    "examples/cpu_smoke.py": "ee8f1765ba2cb8ecf175933442f7be455740c63ababafd87bc478b6b09dd7a6c",
+    "examples/social_simulation.py": "237be4b0b67a9270896dfbc0d3f1bb66cad0af7956ba84ed9ba44f8c9c0deb91",
+    "examples/alfworld_choice.py": "19b8b4c93d4632619e3296df761d3412d10b4a8ee569567518e81e30ab02ec47",
+    "examples/dev_demo.jsonl": "72fd152f12b1d7e1f7e29dc29db07533bfa20f8b52ab7412a098881e672804d7",
+    "examples/train_demo.jsonl": "3b60b98bac14a4ed284d518296aaf0bef2ea2e52e165eafc558fa37e71b5da99"
+  }
+}

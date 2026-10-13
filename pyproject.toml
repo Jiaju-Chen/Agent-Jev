@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-jev"
+version = "0.1.0"
+description = "Train and use single-forward decision models for agents and simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6,<3", "transformers>=5.17,<6", "safetensors>=0.4", "huggingface-hub>=0.30"]
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/Jiaju-Chen/Agent-Jev"
+Issues = "https://github.com/Jiaju-Chen/Agent-Jev/issues"
+
+[project.scripts]
+agent-jev-train = "decoder_decision.train:main"
+
+[project.optional-dependencies]
+alfworld = ["alfworld==0.4.2", "textworld==1.7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

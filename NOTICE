@@ -1,0 +1,9 @@
+Agent-Jev
+Copyright 2026 Jiaju Chen and Agent-Jev contributors
+
+An independent toolkit for decoder-based decision readout and supervised
+fine-tuning. Inspired by TypeSafe Jev's typed decision interface and prior
+single-pass decision work including Mapika/decider. Not affiliated with or
+endorsed by TypeSafe AI, Qwen, or the Decider project.
+
+No third-party model weights or research datasets are included.
